@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Profiler App</string>
+    <string name="strName">Calvin Gabriel A. Alejandro</string>
+    <string name="strStudNum">2015081460</string>
+    <string name="strSection">4ITB</string>
+    <string name="lblName">Student Name: </string>
+    <string name="lblStudNum">Student Number: </string>
+    <string name="lblSection">Section: </string>
+</resources>

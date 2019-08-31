@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:contentDescription="UST Logo"
+        android:id="@+id/imageViewUst"
+        android:layout_marginTop="16dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ustlogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="50dp"/>
+
+    <TextView
+        style="@style/TvTheme"
+        android:id="@+id/lblStudNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblStudNum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/tvStudNum"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvStudNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strStudNum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/lblStudNum"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        style="@style/TvTheme"
+        android:id="@+id/lblStudName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblName"
+        app:layout_constraintTop_toBottomOf="@id/lblStudNum"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvStudName"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tvStudName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strName"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStudNum"
+        app:layout_constraintLeft_toRightOf="@id/lblStudName"/>
+
+    <TextView
+        style="@style/TvTheme"
+        android:id="@+id/lblSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblSection"
+        app:layout_constraintTop_toBottomOf="@id/lblStudName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvSection"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="18dp"/>
+
+    <TextView
+        android:id="@+id/tvSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strSection"
+        android:layout_marginTop="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStudName"
+        app:layout_constraintLeft_toRightOf="@id/lblSection"
+        android:layout_marginRight="100dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
